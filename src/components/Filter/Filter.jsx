@@ -1,9 +1,12 @@
-//STYLES
+//IMPORT
 import { useDispatch, useSelector } from 'react-redux';
+//SELECTORS
+import { getFilter } from '../../redux/selectors';
+//ACTIONS
+import { updateFilter } from '../../redux/filterSlice';
+//STYLES
 import { StyledForm, StyledTitle } from './Filter.styled';
 import { StyledLabel } from 'components/ContactForm/ContactForm.styled';
-import { getFilter } from '../../redux/selectors';
-import { updateFilter } from '../../redux/filterSlice';
 
 function Filter() {
   const dispatch = useDispatch();
