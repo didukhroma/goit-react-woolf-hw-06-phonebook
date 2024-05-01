@@ -49,7 +49,7 @@ export default function App() {
       <StyledMainTitle>Phonebook</StyledMainTitle>
       <ContactForm addContact={addContact} />
       <StyledTitle>Contacts</StyledTitle>
-      <Filter filter={filter} handleChange={handleChangeFilter} />
+      <Filter />
       <ContactsList contacts={filteredContacts} deleteContact={deleteContact} />
       {!contacts.length && <Notification />}
     </Container>
